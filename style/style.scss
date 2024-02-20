@@ -1,0 +1,60 @@
+$borderSettting: rgb(200, 198, 198) 1px solid;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  .article-wrapper {
+    border: $borderSettting;
+    margin: 5rem 15rem 2rem;
+    section {
+      border: $borderSettting;
+      padding: 1.25rem;
+      article {
+        display: flex;
+        h1 {
+          font-size: 1.25rem;
+          color: #1190f7;
+        }
+        .visibility {
+          font-size: 0.8rem;
+          padding: 0.25rem;
+          border-radius: 1rem;
+          border: $borderSettting;
+          margin-left: 1rem;
+        }
+      }
+      .desc {
+        margin-top: 0.5rem;
+      }
+      .topic-wrapper {
+        display: flex;
+        margin-top: 0.5rem;
+        .topicTitle {
+          margin-right: 0.2rem;
+          font-size: 0.9rem;
+          color: #0968da;
+          background-color: #ddf4ff;
+          padding: 0.2rem 0.8rem;
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+  button {
+    margin-bottom: 2rem;
+    border: none;
+    background-color: transparent;
+    font-size: 0.9rem;
+    color: #1190f7;
+    align-content: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
